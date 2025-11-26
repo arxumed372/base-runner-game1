@@ -1,0 +1,15 @@
+{
+  "accountAssociation": {
+    "header": "TODO_PASTE_HEADER_FROM_MANIFEST_TOOL",
+    "payload": "TODO_PASTE_PAYLOAD_FROM_MANIFEST_TOOL",
+    "signature": "TODO_PASTE_SIGNATURE_FROM_MANIFEST_TOOL"
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Base Runner",
+    "iconUrl": "https://YOUR-DEPLOYED-DOMAIN.vercel.app/icon.png",
+    "homeUrl": "https://YOUR-DEPLOYED-DOMAIN.vercel.app/",
+    "description": "A pixel cyberpunk runner game built as a Farcaster mini app.",
+    "splashImageUrl": "https://YOUR-DEPLOYED-DOMAIN.vercel.app/splash.png"
+  }
+}
