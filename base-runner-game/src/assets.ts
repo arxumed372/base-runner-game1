@@ -3,6 +3,10 @@ export const BG_SUNSET = '/base-runner-game/assets/20251117_2234_Cyberpunk Sunse
 export const BG_DAYTIME = '/base-runner-game/assets/20251117_2246_Expansive Cyberpunk Cityscape_remix_01ka9ngcbsex3rxg2jwsq8egaq (1).png';
 export const BG_NIGHT = '/base-runner-game/assets/20251117_2251_Cyberpunk Desert Nightscape_remix_01ka9nta8qet08t6f4mhm1a7sx.png';
 
+// Title / dialogue backgrounds (reuse existing sunset background)
+export const TITLE_BG = BG_SUNSET;
+export const DIALOGUE_BG = BG_SUNSET;
+
 // Player sprite – single-frame PNG (runner mid-step)
 export const PLAYER_SPRITE = '/base-runner-game/assets/BassyJayse1.png';
 
