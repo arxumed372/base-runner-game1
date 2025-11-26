@@ -1,22 +1,22 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://base-runner-game1-3ads.vercel.app';
+const appUrl =
+  process.env.NEXT_PUBLIC_APP_URL ?? 'https://base-runner-game1-3ads.vercel.app';
 
-const miniappMeta = {
-  version: "1",
-  url: appUrl,
-  name: "Base Runner",
+const miniAppEmbed = {
+  version: '1',
   imageUrl: `${appUrl}/embed.png`,
-  buttons: [
-    {
-      label: "Play Base Runner",
-      action: {
-        type: "launch_miniapp",
-        url: appUrl,
-      },
+  button: {
+    title: 'Play Base Runner',
+    action: {
+      type: 'launch_frame',
+      name: 'Base Runner',
+      url: appUrl,
+      splashImageUrl: `${appUrl}/splash.png`,
+      splashBackgroundColor: '#000000',
     },
-  ],
+  },
 };
 
 export const metadata: Metadata = {
@@ -25,15 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Base Runner',
     description: 'A pixel cyberpunk runner game built as a Farcaster mini app.',
-    url: appUrl,
-    images: [
-      {
-        url: '/embed.png',
-        width: 1200,
-        height: 630,
-        alt: 'Base Runner – pixel cyberpunk runner game',
-      },
-    ],
+    images: [`${appUrl}/embed.png`],
   },
   twitter: {
     card: 'summary_large_image',
@@ -42,7 +34,7 @@ export const metadata: Metadata = {
     images: ['/embed.png'],
   },
   other: {
-    'fc:miniapp': JSON.stringify(miniappMeta),
+    'fc:miniapp': JSON.stringify(miniAppEmbed),
   },
 } as const;
 
