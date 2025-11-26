@@ -1,15 +1,15 @@
 {
   "accountAssociation": {
-    "header": "TODO_PASTE_HEADER_FROM_MANIFEST_TOOL",
-    "payload": "TODO_PASTE_PAYLOAD_FROM_MANIFEST_TOOL",
-    "signature": "TODO_PASTE_SIGNATURE_FROM_MANIFEST_TOOL"
+    "header": "eyJmaWQiOjEwOTM1NjYsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhhZDcwNGYyMUEyOTJBOGM5NDVEMzIxRjFiZTU5ZEQ1NTE0QkE0RDNjIn0",
+    "payload": "eyJkb21haW4iOiJiYXNlLXJ1bm5lci1nYW1lMS0zYWRzLnZlcmNlbC5hcHAifQ",
+    "signature": "b56drbl5wFfG70+iw+3TDh02BdGLtDiyF1RuChVnISNe14wN2AGIONrHbCYACNpO2iCluPtqHql/TqixkLlS5xw="
   },
   "miniapp": {
     "version": "1",
     "name": "Base Runner",
-    "iconUrl": "https://YOUR-DEPLOYED-DOMAIN.vercel.app/icon.png",
-    "homeUrl": "https://YOUR-DEPLOYED-DOMAIN.vercel.app/",
+    "iconUrl": "https://base-runner-game1-3ads.vercel.app/icon.png",
+    "homeUrl": "https://base-runner-game1-3ads.vercel.app/",
     "description": "A pixel cyberpunk runner game built as a Farcaster mini app.",
-    "splashImageUrl": "https://YOUR-DEPLOYED-DOMAIN.vercel.app/splash.png"
+    "splashImageUrl": "https://base-runner-game1-3ads.vercel.app/splash.png"
   }
 }
