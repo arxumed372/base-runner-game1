@@ -20,30 +20,29 @@ const miniappMeta = {
 };
 
 export const metadata: Metadata = {
-  title: 'BaseRunner - Endless Runner Game',
-  description: 'A Chrome T-Rex style endless runner game for Base mini app',
+  title: 'Base Runner',
+  description: 'A pixel cyberpunk runner game built as a Farcaster mini app.',
   openGraph: {
-    title: 'BaseRunner - Endless Runner Game',
-    description: 'A Chrome T-Rex style endless runner game for Base mini app',
+    title: 'Base Runner',
+    description: 'A pixel cyberpunk runner game built as a Farcaster mini app.',
     url: appUrl,
     images: [
       {
-        url: "/embed.png",
+        url: '/embed.png',
         width: 1200,
-        height: 800,
-        alt: "Base Runner – cyberpunk runner game",
+        height: 630,
+        alt: 'Base Runner – pixel cyberpunk runner game',
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: 'BaseRunner - Endless Runner Game',
-    description: 'A Chrome T-Rex style endless runner game for Base mini app',
-    images: ["/embed.png"],
+    card: 'summary_large_image',
+    title: 'Base Runner',
+    description: 'A pixel cyberpunk runner game built as a Farcaster mini app.',
+    images: ['/embed.png'],
   },
   other: {
     'fc:miniapp': JSON.stringify(miniappMeta),
-    'fc:frame': JSON.stringify(miniappMeta),
   },
 } as const;
 
