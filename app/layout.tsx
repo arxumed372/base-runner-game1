@@ -1,28 +1,49 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://YOUR-DEPLOYED-DOMAIN.vercel.app';
+const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://base-runner-game1-3ads.vercel.app';
 
-const miniAppEmbed = {
+const miniappMeta = {
   version: "1",
+  url: appUrl,
+  name: "Base Runner",
   imageUrl: `${appUrl}/embed.png`,
-  button: {
-    title: "Play Base Runner",
-    action: {
-      type: "launch_frame",
-      name: "Base Runner",
-      url: appUrl,
-      splashImageUrl: `${appUrl}/splash.png`,
-      splashBackgroundColor: "#050816"
-    }
-  }
+  buttons: [
+    {
+      label: "Play Base Runner",
+      action: {
+        type: "launch_miniapp",
+        url: appUrl,
+      },
+    },
+  ],
 };
 
 export const metadata: Metadata = {
   title: 'BaseRunner - Endless Runner Game',
   description: 'A Chrome T-Rex style endless runner game for Base mini app',
+  openGraph: {
+    title: 'BaseRunner - Endless Runner Game',
+    description: 'A Chrome T-Rex style endless runner game for Base mini app',
+    url: appUrl,
+    images: [
+      {
+        url: "/embed.png",
+        width: 1200,
+        height: 800,
+        alt: "Base Runner – cyberpunk runner game",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: 'BaseRunner - Endless Runner Game',
+    description: 'A Chrome T-Rex style endless runner game for Base mini app',
+    images: ["/embed.png"],
+  },
   other: {
-    'fc:miniapp': JSON.stringify(miniAppEmbed),
+    'fc:miniapp': JSON.stringify(miniappMeta),
+    'fc:frame': JSON.stringify(miniappMeta),
   },
 } as const;
 

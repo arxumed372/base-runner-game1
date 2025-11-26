@@ -10,6 +10,7 @@
     "iconUrl": "https://base-runner-game1-3ads.vercel.app/icon.png",
     "homeUrl": "https://base-runner-game1-3ads.vercel.app/",
     "description": "A pixel cyberpunk runner game built as a Farcaster mini app.",
-    "splashImageUrl": "https://base-runner-game1-3ads.vercel.app/splash.png"
+    "splashImageUrl": "https://base-runner-game1-3ads.vercel.app/splash.png",
+    "imageUrl": "https://base-runner-game1-3ads.vercel.app/embed.png"
   }
 }
